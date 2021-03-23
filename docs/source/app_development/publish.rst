@@ -22,12 +22,15 @@ To learn more about forking a GitHub repository, see their documentation `here <
 In your forked repository, you can create a new git branch and update the ``apps.json`` file found in the root of the repository.
 The update consists of an addition to the JSON file, e.g.:
 
-.. code:: json
+.. code-block::
 
-    "my-app": {
-        "git_url": "https://github.com/me/my-aiidalab-app.git",
-        "meta_url": "https://raw.githubusercontent.com/me/my-aiidalab-app/main/metadata.json",
-        "categories": ["quantum"]
+    {
+        ...,
+        "my-app": {
+            "git_url": "https://github.com/me/my-aiidalab-app.git",
+            "meta_url": "https://raw.githubusercontent.com/me/my-aiidalab-app/main/metadata.json",
+            "categories": ["quantum"]
+        }
     }
 
 This example is for an AiiDAlab existing on GitHub under the user or organization named ``me`` called ``my-aiidalab-app``.
